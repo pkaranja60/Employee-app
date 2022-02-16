@@ -1,0 +1,44 @@
+<ion-content class='home-background'>
+  <div class="signup-section ion-padding">
+    <div class="heading ion-padding">
+      <h3>Create an account</h3>
+      <p>Be in control of life</p>
+    </div>
+    <form [formGroup]='form'>
+      <div class="signup-form ion-padding">
+        <div class="form-input">
+          <ion-icon name="person-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type='text' formControlName='username'></ion-input>
+          </ion-item>
+        </div>
+        <ion-label color='danger' *ngIf="form.get('username').touched && form.get('username').errors?.name">Please Enter a Username
+        </ion-label>
+        <div class="form-input">
+          <ion-icon name="mail-unread-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type='email' formControlName='email'></ion-input>
+          </ion-item>
+        </div>
+        <ion-label color='danger' *ngIf="form.get('email').touched && form.get('email').errors?.email">Email is Invalid
+        </ion-label>
+        <div class="form-input">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type='password' formControlName='password'></ion-input>
+          </ion-item>
+        </div>
+      </div>
+    </form>
+    <div class="action-button ion-padding">
+      <ion-button color='warning' class='signup-button' size="large" fill='outline' shape="round" [disabled]='!form.valid' (click)='signup()'>
+        Sign Up</ion-button>
+      <p>Have an account ?<ion-button class='login-button' size='small' fill='clear' (click)='login()'>Login
+        </ion-button>
+      </p>
+    </div>
+  </div>
+</ion-content>

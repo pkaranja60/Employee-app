@@ -1,0 +1,113 @@
+.home-background {
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+        url('/assets/undraw_feeling_proud_qne1.svg') no-repeat fixed;
+    background-size: 100%;
+}
+
+.signup-section {
+    height: 75vh;
+    overflow-y: hidden;
+    width: 100%;
+    max-width: 500px;
+    background: #fdfdfd;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border-top-left-radius: 56px;
+    border-top-right-radius: 56px;
+
+    .heading {
+        margin-top: 10px;
+        text-align: center;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #7b7b7b;
+        }
+    }
+
+    .signup-form {
+        ion-label {
+            font-size: 0.8rem;
+        }
+
+        .form-input {
+            position: relative;
+            margin-bottom: 10px;
+
+            ion-item:part(native) {
+                padding-left: 0;
+            }
+
+            ion-icon {
+                position: absolute;
+                top: 37px;
+                z-index: 2;
+                font-weight: bold;
+                font-size: 1.2rem;
+                left: 5px;
+            }
+
+            ion-label {
+                position: absolute;
+                margin-left: 35px;
+                font-size: 1.0rem;
+                top: 3px;
+            }
+
+            ion-input {
+                font-size: 0.9rem;
+                --padding-start: 36px;
+                --padding-top: 36px;
+                color: #7b7b7b
+            }
+        }
+    }
+
+    .action-button {
+        text-align: center;
+
+        .signup-button {
+            font-weight: 500;
+            width: 80%;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #262424;
+        }
+
+        .login-button {
+            margin-top: -7px;
+            color: rgb(36, 169, 230);
+            font-weight: 500;
+            text-transform: initial;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .signup-section {
+        max-height: 65vh;
+        overflow-y: auto;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .home-background {
+        --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+            url('/assets/undraw_feeling_proud_qne1.svg') no-repeat fixed;
+        background-size: 100%;
+    }
+
+}
