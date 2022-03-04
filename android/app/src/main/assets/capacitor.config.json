@@ -1,0 +1,7 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "beginner",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"linuxAndroidStudioPath": "/snap/bin/android-studio"
+}
