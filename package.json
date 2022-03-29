@@ -19,7 +19,11 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+<<<<<<< Updated upstream
     "@capacitor/android": "^3.4.3",
+=======
+    "@capacitor/android": "3.4.2",
+>>>>>>> Stashed changes
     "@capacitor/app": "1.1.0",
     "@capacitor/core": "^3.4.0",
     "@capacitor/haptics": "1.1.4",

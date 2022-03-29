@@ -2,6 +2,10 @@
 	"appId": "io.ionic.starter",
 	"appName": "beginner",
 	"webDir": "www",
+<<<<<<< Updated upstream
 	"bundledWebRuntime": false,
 	"linuxAndroidStudioPath": "/snap/bin/android-studio"
+=======
+	"bundledWebRuntime": false
+>>>>>>> Stashed changes
 }
